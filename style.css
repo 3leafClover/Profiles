@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "OMG";
+    src: url("test.ttf");
+}
+
+body {
+    background-image: url("combined.png");
+    font-family: "OMG";
+    background-color: blue;
+    font-size: large;
+}
+
+nav {
+    background-image: url("https://media.discordapp.net/attachments/1088931788472193125/1101188636906639400/9k.png");
+    background-size: cover;
+    height: 110px;
+    font-size: 65px;
+    width: 120%;
+    text-align: center;
+    position: fixed;
+    margin-top: -35px;
+    left: -180px;
+    border: rgb(255, 255, 255) solid 5px;
+    z-index: 2;
+}
+
+nav ul li {
+    position: relative;
+    display: inline;
+    padding: 50px;
+    top: -25px;
+}
+
+#currency {
+    background-image: url("hm.png");
+    background-size: 300px 117px;
+    background-repeat: no-repeat;
+    right: 3%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navitem:hover {
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+nav ul li a img {
+    width: 50px;
+}
+
+#settings {
+    background-image: url("hm.png");
+    background-size: 200px 117px;
+    background-repeat: no-repeat;
+    left: 5%;
+}
+
+#settings:hover {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes turn {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    25% {
+        transform: rotateZ(10deg);
+    }
+    35% {
+        transform: rotateZ(25deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(-10deg);
+    }
+    85% {
+        transform: rotateZ(25deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
